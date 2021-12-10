@@ -20,7 +20,9 @@ public class Exercise001 {
 
     public String reverse(String sentence) {
         // Add your code here
-        return "";
+        StringBuilder bld = new StringBuilder(sentence);
+	System.out.println(bld.reverse());
+        return bld.toString();
     }
 
     public int countLinuxUsers(List<User> users) {
