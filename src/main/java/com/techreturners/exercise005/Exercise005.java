@@ -12,10 +12,10 @@ public class Exercise005 {
         int abcENG = 26;
 
         //"The quick brown fox jumps overrr the lazyyy   doggggg"
-        //eliminate all empty chars
-        input = (input.toLowerCase(new Locale("en", "US"))).replaceAll("\\s+", "");
+        //eliminate all chars rather than [a-z]
+        input = (input.toLowerCase(new Locale("en", "US"))).replaceAll("[^a-z]", "");
 
-        if (!isAlpha(input)) return false;
+        //if (!isAlpha(input)) return false;
 
         //split each char into array
         String[] str = input.split("(?!^)");
